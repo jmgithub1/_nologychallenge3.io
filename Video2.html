@@ -6,20 +6,35 @@
     <title>The LampTube</title>
 </head>
 <body>
-    <nav class="mainNav">
-        <ul>
-        <li>Home</li>
-        <li><a href="index.html">VideoOne</a></li>
-        <li><a href="Video1.html">VideoTwo</li>
-        <li><a href="Video3.html">VideoThree</li>
-        </ul>
-    </nav>
-    <section>
-
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/DTIcOcxfJ6o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
-    </section>
-    
+<nav class="mainNav">
+    <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="Video1.html">VideoOne</a></li>
+    <li><a href="Video3.html">VideoThree</a></li>
+    </ul>
+</nav>
+<header>
+    <h1>Lamp Video Two</h1>
+</header>
+<section>
+    <p>The Best lamp Videos ever!</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/DTIcOcxfJ6o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</section>
+<section>
+    <form method='post'> 
+        Name<input type='text' name='name' id='name' /><br /> 
+        Last Name<input type='text' name='email' id='email' /><br /> 
+        Email <input type='text' name='website' id='website' /><br /> 
+        Comment:<br /> 
+        <textarea name='comment' id='comment'></textarea><br /> 
+        <input type='hidden' name='articleid' id='articleid' value='<? echo $_GET["id"]; ?>' /> 
+        <input type='submit' value='Submit' />   
+    </form>              
+</section>
+<aside>
+<footer>
+    <p>Created by James Mallen for James Mallen 2020</p>
+</footer>
+</aside>
 </body>
 </html>
