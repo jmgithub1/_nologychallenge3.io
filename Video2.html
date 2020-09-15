@@ -21,15 +21,16 @@
     <iframe width="560" height="315" src="https://www.youtube.com/embed/DTIcOcxfJ6o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </section>
 <section>
-    <form method='post'> 
-        Name<input type='text' name='name' id='name' /><br /> 
-        Last Name<input type='text' name='email' id='email' /><br /> 
-        Email <input type='text' name='website' id='website' /><br /> 
-        Comment:<br /> 
-        <textarea name='comment' id='comment'></textarea><br /> 
-        <input type='hidden' name='articleid' id='articleid' value='<? echo $_GET["id"]; ?>' /> 
-        <input type='submit' value='Submit' />   
-    </form>              
+    <form>
+        <fieldset>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Email">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="*********"  />   
+        </fieldset>
+             <br>
+            <input type="submit">
+    </form>
 </section>
 <aside>
 <footer>
